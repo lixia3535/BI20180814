@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="bi-cloud-eureka-service_main" target="1.8" />
+      <module name="bi-cloud-eureka-service_test" target="1.8" />
+      <module name="bi-service-contract_main" target="1.8" />
+      <module name="bi-service-contract_test" target="1.8" />
+      <module name="Bi20180814_main" target="1.8" />
+      <module name="Bi20180814_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

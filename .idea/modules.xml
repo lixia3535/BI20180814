@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Bi20180814.iml" filepath="$PROJECT_DIR$/.idea/modules/Bi20180814.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Bi20180814_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Bi20180814_main.iml" group="Bi20180814" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Bi20180814_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Bi20180814_test.iml" group="Bi20180814" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bi-cloud-eureka-service/bi-cloud-eureka-service.iml" filepath="$PROJECT_DIR$/.idea/modules/bi-cloud-eureka-service/bi-cloud-eureka-service.iml" group="bi-cloud-eureka-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bi-cloud-eureka-service/bi-cloud-eureka-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/bi-cloud-eureka-service/bi-cloud-eureka-service_main.iml" group="bi-cloud-eureka-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bi-cloud-eureka-service/bi-cloud-eureka-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/bi-cloud-eureka-service/bi-cloud-eureka-service_test.iml" group="bi-cloud-eureka-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bi-service-contract/bi-service-contract.iml" filepath="$PROJECT_DIR$/.idea/modules/bi-service-contract/bi-service-contract.iml" group="bi-service-contract" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bi-service-contract/bi-service-contract_main.iml" filepath="$PROJECT_DIR$/.idea/modules/bi-service-contract/bi-service-contract_main.iml" group="bi-service-contract" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bi-service-contract/bi-service-contract_test.iml" filepath="$PROJECT_DIR$/.idea/modules/bi-service-contract/bi-service-contract_test.iml" group="bi-service-contract" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,52 @@
+apply plugin:'java'
+//定义常量
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+ext{
+    springbootversion = '2.0.4.RELEASE'
+}
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-parent', version: '2.0.3.RELEASE', ext: 'pom'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.0.3.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: '2.0.3.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.3.RELEASE'
+
+}
+//配置仓库地址，以及第三方包地址( public 中找不到时，从 thirdparty 中找)
+//仓库的配置
+repositories {
+    mavenLocal()
+    /* 指定本地仓库地址 */
+    //D:\soft\GradleResposity
+    maven { url "file://D:/soft/GradleResposity" }
+    /* 指定的远程仓库 */
+    maven { url "http://mvnrepository.com/" }
+    //指定阿里云仓库
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
+    /*
+     * 公司仓库，可能需要验证
+     * 不推荐直接将用户名密码写在build.gradle中
+     * 可以写在~/.gradle/gradle.properties中，再使用
+     */
+    /*maven {
+        url "<you_company_resp_url>"
+        credentials {
+            username 'your_username'
+            password 'your_password'
+        }
+    }*/
+    // 支持ivy仓库
+    /*   ivy { url "<ivy_resp_url>" }*/
+}
+
+
+
+
+
+

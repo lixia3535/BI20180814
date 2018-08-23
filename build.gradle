@@ -1,0 +1,30 @@
+group 'com.xparsing.wenxin'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+//子模块配置
+subprojects {
+
+    //c插件依赖
+    apply plugin: 'java'
+
+    sourceCompatibility = 1.8
+    //定义常量
+    ext{
+        junitVersion = "4.11"
+        springbootVersion = "2.0.3.RELEASE"
+        compileJava.options.encoding = 'UTF-8'
+        compileTestJava.options.encoding = 'UTF-8'
+    }
+
+    //配置依赖
+    dependencies{
+        testCompile group: 'junit', name: 'junit', version: '4.11'
+    }
+
+}
+//所有模块配置
+allprojects {
+    apply from: "${rootProject.projectDir}/common.gradle"
+}

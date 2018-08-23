@@ -1,0 +1,4 @@
+rootProject.name = 'Bi20180814'
+include 'bi-cloud-eureka-service'
+include 'bi-service-contract'
+

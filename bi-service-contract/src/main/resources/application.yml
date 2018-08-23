@@ -1,0 +1,119 @@
+#使用的是yaml以数据为中心的语言
+#server :
+#设置端口
+  #port : 8099
+  #设置访问路径 默认值是/
+  #servlet : /home
+
+
+#配置视图重定向 JSP 文件的位置 以及后缀
+#spring :
+#文件格式为yml
+
+      #--------------------------charset--------------------------
+      #  http:
+      #   encoding:
+       #     charset: UTF-8
+       #     enabled: true
+      #      force: true
+
+      #--------------------------Server--------------------------
+  #    server:
+   #     tomcat:
+     #     uri-encoding: UTF-8
+   #data :
+           #elasticsearch :
+             #cluster-name : elasticsearch #默认名字
+             #cluster-nodes: 120.79.197.131:9300 配置es节点信息，逗号分隔，如果没有指定，则启动ClientNode
+ #  mvc :
+  #  view :
+      #jsp页面在那个目录下面
+   #   prefix : /WEB-INF/views/
+      #页面后缀
+     # suffix : .jsp
+
+#数据源的配置
+datasource :
+       #type : com.alibaba.druid.pool.DruidDataSource
+       #url : jdbc:mysql://127.0.0.1:3306/viplx?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&ssl=false
+       #username : root
+       #password : root
+       #driverClassName : com.mysql.jdbc.Driver
+       type : com.alibaba.druid.pool.DruidDataSource
+       url : jdbc:mysql://127.0.0.1:3306/bi?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+       username: root
+       password : root
+       driverClassName : com.mysql.jdbc.Driver
+       #连接池的配置
+       initialSize : 5
+       minIdle : 5
+       maxActive : 20
+       maxWait : 6000
+       timeBetweenEvictionRunsMillis : 6000
+       minEvictableIdleTimeMillis : 300000
+       validationQuery : SELECT 1 FROM DUAL
+       testWhileIdle : true
+       testOnBorrow : false
+    #   exceptionsorter : true
+       testOnReturn : false
+       poolPreparedStatements : true
+       #filters : stat,wall,log4j
+       maxPoolPreparedStatementPerConnectionSize : 20
+       connectionProperties : druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+       useGlobalDataSourceStat : true
+
+
+#mybatis的基本配置
+mybatis-plus :
+        #mapper的存储包
+         # 如果是放在src/main/java目录下 classpath:/com/yourpackage/*/mapper/*Mapper.xml
+          # 如果是放在resource目录 classpath:/mapper/*Mapper.xml
+        mapper-locations : classpath:/mapper/**Mapper.xml
+        #实体类起别名 实体扫描包 多个包用,分隔
+        typeAliasesPackage : com.xparsing.weixin.entity
+        global-config :
+            #主键类型  0:"数据库ID自增", 1:"用户输入ID",2:"全局唯一ID (数字类型唯一ID)", 3:"全局唯一ID UUID";
+            id-type : 1
+            #字段策略 0:"忽略判断",1:"非 NULL 判断"),2:"非空判断"
+            field-strategy : 2
+            #驼峰下划线转换
+            db-column-underline : true
+            #刷新mapper 调试神器
+            refresh-mapper : true
+            #数据库大写下划线转换
+            #capital-mode: true
+            #序列接口实现类配置
+            #key-generator: com.baomidou.springboot.xxx
+            #逻辑删除配置（下面3个配置）
+            logic-delete-value : 0
+            logic-not-delete-value : 1
+            #自定义SQL注入器
+            #sql-injector: com.baomidou.mybatisplus.mapper.LogicSqlInjector
+            #自定义填充策略接口实现
+            #meta-object-handler: com.baomidou.springboot.xxx
+        configuration :
+            map-underscore-to-camel-case : true
+            cache-enabled : false
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:45679/eureka/
+  instance:
+    hostname: localhost
+server:
+  servlet:
+    path: /home
+  port: 8099
+spring:
+  application:
+    name: eureka-service
+#eureka
+#log 配置
+#logging :
+ # level : warn
+my:
+  name: lixia
+  age: 24
+  sex: 女
+  id : ${random.id}
+
