@@ -1,17 +1,18 @@
 package com.xparsing.weixin.controller;
 
 
-import com.baomidou.mybatisplus.mapper.EntityWrapper;
-import com.xparsing.weixin.entity.Content;
-import com.xparsing.weixin.service.impl.ContentServiceImpl;
+import com.xparsing.weixin.service.ContentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.text.DecimalFormat;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -19,49 +20,101 @@ import java.util.List;
  * </p>
  *
  * @author lx
- * @since 2018-08-13
+ * @since 2018-08-27
  */
 @RestController
-//@EnableConfigurationProperties({Content.class})
+@RequestMapping("/content")
 public class ContentController {
     @Autowired
-    ContentServiceImpl contentService;
-  /*  @Autowired
-    Content content;*/
-    //读取属性配置文件@Value("${属性名}")
-    @Value("${my.name}")
-    private String name;
+    ContentService contentService;
+    /**
+     *   //根据案由和时间和地区 查询的数据有
+     //案件数量、法官、律师的人数
+     * @param caseKeyword
+     * @param caseYear
+     * @param cityCode
+     * @return
+     */
+    @RequestMapping("/findByReasonAndCourtidAndLawdate")
+    public Object findByReasonAndCourtidAndLawdate(@RequestParam String caseKeyword,String caseYear,String cityCode){
+        caseYear = caseYear+"-01-01";
+       Map<String ,String> caseMap =  contentService.findByReasonAndCourtidAndLawdate(caseKeyword,cityCode,caseYear);
+        caseMap.put("code","1");
+        caseMap.put("msg","1");
+       return caseMap;
+    }
+
+    /**
+     * 根据案由时间地区查找对应律师的姓名以及排名
+     * @param caseKeyword
+     * @param caseYear
+     * @param cityCode
+     * @return
+     */
+    @RequestMapping("/findLawyersByReasonAndCourtidAndLawdate")
+    public Map findLawyersByReasonAndCourtidAndLawdate(@RequestParam String caseKeyword,String caseYear,String cityCode){
+        caseYear = caseYear+"-01-01";
+        List<Map<String,Object>> list =  contentService.findLawerByReasonAndCourtidAndLawdate(caseKeyword,cityCode,caseYear);
+        List<Map<String,Object>> listConRatio= computeRatio(list);
+        //  return list;
+        Map map = new HashMap();
+        map.put("code","1");
+        map.put("msg","1");
+        map.put("dataList",listConRatio);
+
+        return map;
+
+    }
+
+    /**
+     *
+     * 查询法官的名字及对应案由的处理的件数
+     * @param caseKeyword
+     * @param caseYear
+     * @param cityCode
+     * @return
+     */
+    @RequestMapping("/findJudgeByReasonAndCourtidAndLawdate")
+    public Map findJudgeByReasonAndCourtidAndLawdate(@RequestParam String caseKeyword,String caseYear,String cityCode){
+        caseYear = caseYear+"-01-01";
+        List<Map<String,Object>> list =  contentService.findJudgeByReasonAndCourtidAndLawdate(caseKeyword,cityCode,caseYear);
+        List<Map<String,Object>> listConRatio= computeRatio(list);
+        Map map = new HashMap();
+        map.put("code","1");
+        map.put("msg","1");
+        map.put("dataList",listConRatio);
+        return map;
 
 
-   @RequestMapping("/search/{id}")
-    public Object findBycondition(@PathVariable("id") Integer id){
-     /*   if("".equals(time)||time==null){
-            //如果时间为空，默认当前年份
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
-            time =   sdf.format(new Date());
-        }
-        if("".equals(area)||area==null){
-            area =   "10";
-        }
-        Content content = new Content();
-        content.setReason(reason);
-        content.setReleaseDate(time);
-        content.setCourt(area);*/
-       System.out.print(name);//16
-       Content content1 =  contentService.selectById(id);
-       // 查询姓名为‘张三’的所有用户记录
-       List<Content> userList = contentService.selectList(
-               new EntityWrapper<Content>().eq("name", "张三")
-       );
-   //    List<Content> contents =  contentService.finbByCondition(content);
-       return content1;
     }
-    @RequestMapping(value = "/miya")
-    public Object testM(){
-        System.out.print(name);
-       /* System.out.print(content.getId());*/
-        return name;
+
+
+    //算比例
+
+    public List<Map<String,Object>> computeRatio(List<Map<String,Object>> list){
+        int casetotailCount=0;
+        for(Map<String,Object> lawyer:list){
+            Long aa = (Long)lawyer.get("caseCount");
+            int caseCount =  new Long(aa).intValue();
+            if(!"".equals(caseCount)) {
+                casetotailCount +=  caseCount;
+            }
+        }
+        for(Map<String,Object> lawyer:list){
+            Long aa = (Long)lawyer.get("caseCount");
+            int caseCount =  new Long(aa).intValue();
+            DecimalFormat df=new DecimalFormat("0.00");
+            System.out.println(df.format((float)caseCount/casetotailCount*100));
+            String ratio = df.format((float)caseCount/casetotailCount*100);
+            lawyer.put("ratio",ratio);
+         //   }
+
+
+        }
+
+        return list;
     }
+
 
 }
 

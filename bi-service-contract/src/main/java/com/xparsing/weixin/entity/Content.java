@@ -1,25 +1,22 @@
 package com.xparsing.weixin.entity;
 
-import com.baomidou.mybatisplus.enums.IdType;
-import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.activerecord.Model;
 import java.io.Serializable;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author lx
- * @since 2018-08-23
+ * @since 2018-08-27
  */
 public class Content extends Model<Content> {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId(value = "id", type = IdType.AUTO)
-    private Integer id;
+    private String id;
     /**
      * 标题
      */
@@ -91,13 +88,15 @@ public class Content extends Model<Content> {
      */
     @TableField("court_id")
     private String courtId;
+    @TableField("city_id")
+    private String cityId;
 
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -229,6 +228,14 @@ public class Content extends Model<Content> {
         this.courtId = courtId;
     }
 
+    public String getCityId() {
+        return cityId;
+    }
+
+    public void setCityId(String cityId) {
+        this.cityId = cityId;
+    }
+
     @Override
     protected Serializable pkVal() {
         return this.id;
@@ -237,23 +244,24 @@ public class Content extends Model<Content> {
     @Override
     public String toString() {
         return "Content{" +
-        ", id=" + id +
-        ", name=" + name +
-        ", releaseDate=" + releaseDate +
-        ", contentDefinite=" + contentDefinite +
-        ", announcement=" + announcement +
-        ", lawType=" + lawType +
-        ", hearingProcedure=" + hearingProcedure +
-        ", lawDate=" + lawDate +
-        ", people=" + people +
-        ", reason=" + reason +
-        ", basis=" + basis +
-        ", judge=" + judge +
-        ", agent=" + agent +
-        ", plaintiff=" + plaintiff +
-        ", defendant=" + defendant +
-        ", legalRepresentative=" + legalRepresentative +
-        ", courtId=" + courtId +
-        "}";
+                ", id=" + id +
+                ", name=" + name +
+                ", releaseDate=" + releaseDate +
+                ", contentDefinite=" + contentDefinite +
+                ", announcement=" + announcement +
+                ", lawType=" + lawType +
+                ", hearingProcedure=" + hearingProcedure +
+                ", lawDate=" + lawDate +
+                ", people=" + people +
+                ", reason=" + reason +
+                ", basis=" + basis +
+                ", judge=" + judge +
+                ", agent=" + agent +
+                ", plaintiff=" + plaintiff +
+                ", defendant=" + defendant +
+                ", legalRepresentative=" + legalRepresentative +
+                ", courtId=" + courtId +
+                ", cityId=" + cityId +
+                "}";
     }
 }

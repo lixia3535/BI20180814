@@ -1,0 +1,28 @@
+group 'com.xparsing.wenxin'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    //添加elasticsearch依赖
+// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-elasticsearch
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-elasticsearch', version: '2.0.4.RELEASE'
+
+    //使用lombok语法
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.2'
+   // compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-client', version:'2.0.1.RELEASE'
+    //mysql驱动类
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.11'
+    // https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch
+   compile group: 'org.elasticsearch', name: 'elasticsearch', version: '6.3.2'
+// https://mvnrepository.com/artifact/org.elasticsearch.client/transport
+    compile group: 'org.elasticsearch.client', name: 'transport', version: '6.3.2'
+
+    //ik分词器
+    // https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-analysis-ik
+    compile group: 'org.elasticsearch', name: 'elasticsearch-analysis-ik', version: '6.1.1'
+
+
+}

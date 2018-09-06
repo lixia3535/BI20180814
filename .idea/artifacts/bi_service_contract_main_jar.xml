@@ -1,0 +1,129 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="bi-service-contract_main:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/bi_service_contract_main_jar</output-path>
+    <root id="archive" name="bi-service-contract_main.jar">
+      <element id="module-output" name="bi-service-contract_main" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.7.RELEASE/243a23f8968de8754d8199d669780d683ab177bd/spring-context-5.0.7.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/com/baomidou/mybatis-plus/2.3/mybatis-plus-2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/com/github/jsqlparser/jsqlparser/1.1/jsqlparser-1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.0.7.RELEASE/699016ddf454c2c167d9f84ae5777eccadf54728/spring-jcl-5.0.7.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.springframework/spring-expression/5.0.7.RELEASE/ca01fb473f53dd0ee3c85663b26d5dc325602057/spring-expression-5.0.7.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/com.baomidou/mybatis-plus-generate/2.3/c5c2a0bc4614c8ffa12e6a69329b5c075edf578b/mybatis-plus-generate-2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.0.3.RELEASE/b874870d915adbc3dd932e19077d3d45c8e54aa0/spring-boot-2.0.3.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/com/alibaba/druid/1.1.10/druid-1.1.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/mysql/mysql-connector-java/8.0.11/2c3d25fe1dfdd6496e0bbe47d67809f67487cfba/mysql-connector-java-8.0.11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.projectlombok/lombok/1.16.14/8486573ff5a5f17f48920c860caf534e7461976b/lombok-1.16.14.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.springframework/spring-aop/5.0.7.RELEASE/fdd0b6aa3c9c7a188c3bfbf6dfd8d40e843be9ef/spring-aop-5.0.7.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.31/tomcat-embed-websocket-8.5.31.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-jdbc/8.5.31/7caa97fbe2765d3ed89adc036b852cc46456e415/tomcat-jdbc-8.5.31.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.6/jackson-core-2.9.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/com.baomidou/mybatis-plus-support/2.3/e7f35f810c1e23c0e39fea6a266486f4bf98ec7e/mybatis-plus-support-2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/9.0.10/7811474c12b6b3156a4b2c9d85d957c9542a7fd5/tomcat-embed-el-9.0.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.10.0/log4j-to-slf4j-2.10.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/org/apache/velocity/velocity-engine-core/2.0/velocity-engine-core-2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.springframework/spring-core/5.0.7.RELEASE/54b731178d81e66eca9623df772ff32718208137/spring-core-5.0.7.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/2.6.0/88ba32feefe385d5dc284b71f649201eabd15778/protobuf-java-2.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-juli/8.5.31/603fb6e0ddd216b53a803801561661ae9c294ff/tomcat-juli-8.5.31.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.7.RELEASE/2e04c6c2922fbfa06b5948be14a5782db168b6ec/spring-web-5.0.7.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.eclipse.jdt/ecj/3.13.102/d8061c14ff6388664299403791ae6bec487c12d7/ecj-3.13.102.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.5/6c6c702c89bfff3cd9e80b04d668c5e190d588c6/commons-lang3-3.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.3.17.RELEASE/861b9f6fbded300a45bc18af093c73e2de6542f2/spring-jdbc-4.3.17.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.6/jackson-datatype-jsr310-2.9.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/com.baomidou/mybatis-plus-core/2.3/152580e452b9415fb258b06ee6109a805a092352/mybatis-plus-core-2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/1.5.13.RELEASE/841f9a3fe4a41d043573465a2a8941d5996bbd1c/spring-boot-starter-jdbc-1.5.13.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/com/baomidou/mybatis-plus-boot-starter/2.3/mybatis-plus-boot-starter-2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.springframework/spring-tx/4.3.17.RELEASE/31b31e13fceadb816d1ab15ec226fa351d72b663/spring-tx-4.3.17.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.6/jackson-module-parameter-names-2.9.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.6/jackson-datatype-jdk8-2.9.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.mybatis/mybatis-spring/1.3.2/fd9961cd026b1f6998be27c516973dd5366b14ec/mybatis-spring-1.3.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.7.RELEASE/751c871527ec7ff335ffc76f2e737e297c0a8d30/spring-webmvc-5.0.7.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.0.3.RELEASE/41fd4180bea3813de8f3c602b5a126218360315b/spring-boot-starter-web-2.0.3.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/com/alibaba/druid-spring-boot-starter/1.1.10/druid-spring-boot-starter-1.1.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/2.0.3.RELEASE/ffaa050dbd36b0441645598f1a7ddaf67fd5e678/spring-boot-starter-2.0.3.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-devtools/2.0.3.RELEASE/478e12e423b45d182a409f12a28fb9f0cddf84bf/spring-boot-devtools-2.0.3.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.0.3.RELEASE/25a51a75bfb997b7b95d6760178ee3303863ec4b/spring-boot-starter-tomcat-2.0.3.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-jasper/9.0.10/761ea6f3b09c163f3710f5e811693c0e7a66b5e8/tomcat-embed-jasper-9.0.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.hibernate.validator/hibernate-validator/6.0.10.Final/4236051a8d209c00f85e70918d5e26d9f3e5201e/hibernate-validator-6.0.10.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.0.3.RELEASE/2e389a8727588c549c28bb277f0f573f65554850/spring-boot-starter-json-2.0.3.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.springframework/spring-beans/5.0.7.RELEASE/c1196cb3e56da83e3c3a02ef323699f4b05feedc/spring-beans-5.0.7.RELEASE.jar" path-in-jar="/" />
+      <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-parent:pom:2.0.3.RELEASE" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-annotations-api/9.0.10/18836b46b76d385615a738d5136fdbdaf9b0f32c/tomcat-annotations-api-9.0.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.0.3.RELEASE/7caad34f01d2688919e15e09a90467963e3d5190/spring-boot-starter-logging-2.0.3.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.0.3.RELEASE/11bc4cc96b08fabad2b3186755818fa0b32d83f/spring-boot-autoconfigure-2.0.3.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.mybatis/mybatis/3.4.6/a77a546f679533837f6c6a75c034b669f3ce6a2f/mybatis-3.4.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/soft/GradleResposity/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.10/fbf9dbc97babe8425332e6baf3925e8f726f3d7b/tomcat-embed-core-9.0.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar" path-in-jar="/" />
+      <element id="library" level="project" name="Gradle: org.springframework:spring-core:5.0.7.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework:spring-expression:5.0.7.RELEASE" />
+      <element id="library" level="project" name="Gradle: ch.qos.logback:logback-classic:1.2.3" />
+      <element id="library" level="project" name="Gradle: ch.qos.logback:logback-core:1.2.3" />
+      <element id="library" level="project" name="Gradle: com.alibaba:druid-spring-boot-starter:1.1.10" />
+      <element id="library" level="project" name="Gradle: com.alibaba:druid:1.1.10" />
+      <element id="library" level="project" name="Gradle: com.baomidou:mybatis-plus-boot-starter:2.3" />
+      <element id="library" level="project" name="Gradle: com.baomidou:mybatis-plus-core:2.3" />
+      <element id="library" level="project" name="Gradle: com.baomidou:mybatis-plus-generate:2.3" />
+      <element id="library" level="project" name="Gradle: com.baomidou:mybatis-plus-support:2.3" />
+      <element id="library" level="project" name="Gradle: com.baomidou:mybatis-plus:2.3" />
+      <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
+      <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.9.6" />
+      <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.9.6" />
+      <element id="library" level="project" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.6" />
+      <element id="library" level="project" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.6" />
+      <element id="library" level="project" name="Gradle: com.fasterxml.jackson.module:jackson-module-parameter-names:2.9.6" />
+      <element id="library" level="project" name="Gradle: com.fasterxml:classmate:1.3.4" />
+      <element id="library" level="project" name="Gradle: com.github.jsqlparser:jsqlparser:1.1" />
+      <element id="library" level="project" name="Gradle: com.google.protobuf:protobuf-java:2.6.0" />
+      <element id="library" level="project" name="Gradle: javax.annotation:javax.annotation-api:1.3.2" />
+      <element id="library" level="project" name="Gradle: javax.validation:validation-api:2.0.1.Final" />
+      <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:8.0.11" />
+      <element id="library" level="project" name="Gradle: org.apache.commons:commons-lang3:3.5" />
+      <element id="library" level="project" name="Gradle: org.apache.logging.log4j:log4j-api:2.10.0" />
+      <element id="library" level="project" name="Gradle: org.apache.logging.log4j:log4j-to-slf4j:2.10.0" />
+      <element id="library" level="project" name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.10" />
+      <element id="library" level="project" name="Gradle: org.apache.tomcat.embed:tomcat-embed-el:9.0.10" />
+      <element id="library" level="project" name="Gradle: org.apache.tomcat.embed:tomcat-embed-jasper:9.0.10" />
+      <element id="library" level="project" name="Gradle: org.apache.tomcat.embed:tomcat-embed-websocket:8.5.31" />
+      <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-annotations-api:9.0.10" />
+      <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-jdbc:8.5.31" />
+      <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-juli:8.5.31" />
+      <element id="library" level="project" name="Gradle: org.apache.velocity:velocity-engine-core:2.0" />
+      <element id="library" level="project" name="Gradle: org.eclipse.jdt:ecj:3.13.102" />
+      <element id="library" level="project" name="Gradle: org.hibernate.validator:hibernate-validator:6.0.10.Final" />
+      <element id="library" level="project" name="Gradle: org.jboss.logging:jboss-logging:3.3.2.Final" />
+      <element id="library" level="project" name="Gradle: org.mybatis:mybatis-spring:1.3.2" />
+      <element id="library" level="project" name="Gradle: org.mybatis:mybatis:3.4.6" />
+      <element id="library" level="project" name="Gradle: org.projectlombok:lombok:1.16.14" />
+      <element id="library" level="project" name="Gradle: org.slf4j:jul-to-slf4j:1.7.25" />
+      <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.25" />
+      <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-autoconfigure:2.0.3.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-devtools:2.0.3.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-jdbc:1.5.13.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-json:2.0.3.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-logging:2.0.3.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-tomcat:2.0.3.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-web:2.0.3.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter:2.0.3.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot:2.0.3.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework:spring-aop:5.0.7.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework:spring-beans:5.0.7.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework:spring-context:5.0.7.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework:spring-jcl:5.0.7.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework:spring-jdbc:4.3.17.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework:spring-tx:4.3.17.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework:spring-web:5.0.7.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:5.0.7.RELEASE" />
+      <element id="library" level="project" name="Gradle: org.yaml:snakeyaml:1.19" />
+    </root>
+  </artifact>
+</component>

@@ -7,14 +7,16 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 ext{
-    springbootversion = '2.0.4.RELEASE'
+    springbootversion = '2.0.3.RELEASE'
 }
 dependencies {
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-parent', version: '2.0.3.RELEASE', ext: 'pom'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-parent', version: '2.0.3.RELEASE'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.0.3.RELEASE'
+//开发的时候加上 打包的时候去掉
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: '2.0.3.RELEASE'
     // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.3.RELEASE'
+
 
 }
 //配置仓库地址，以及第三方包地址( public 中找不到时，从 thirdparty 中找)

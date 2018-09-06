@@ -40,10 +40,11 @@ datasource :
        #password : root
        #driverClassName : com.mysql.jdbc.Driver
        type : com.alibaba.druid.pool.DruidDataSource
+      # url : jdbc:mysql://116.196.125.236:3306/bi?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
        url : jdbc:mysql://127.0.0.1:3306/bi?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
        username: root
        password : root
-       driverClassName : com.mysql.jdbc.Driver
+       driverClassName : com.mysql.cj.jdbc.Driver
        #连接池的配置
        initialSize : 5
        minIdle : 5
@@ -94,26 +95,40 @@ mybatis-plus :
         configuration :
             map-underscore-to-camel-case : true
             cache-enabled : false
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:45679/eureka/
-  instance:
-    hostname: localhost
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:45679/eureka/
+#  instance:
+#    hostname: localhost
 server:
   servlet:
-    path: /home
-  port: 8099
+    path: /
+  port: 8974
+
 spring:
   application:
     name: eureka-service
+  jmx:
+    enabled: false
+
 #eureka
 #log 配置
 #logging :
  # level : warn
-my:
-  name: lixia
-  age: 24
-  sex: 女
-  id : ${random.id}
+weixin:
+  url: https://api.weixin.qq.com/sns/jscode2session?
+  appid: wx41aeb1e535b545a3
+  secret: caab7070b131e52e52e0ec0a7791c436
+  grant_type : authorization_code
+
+logging:
+  config: classpath:logback-spring.xml
+  path: D:/nmyslog
+
+#每次生成邀请码的个数
+invitation:
+  codeNum: 100
+
+
 

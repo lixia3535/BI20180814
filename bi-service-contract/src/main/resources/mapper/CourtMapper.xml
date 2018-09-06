@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xparsing.weixin.dao.CourtMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xparsing.weixin.entity.Court">
+        <id column="id" property="id" />
+        <result column="court" property="court" />
+        <result column="court_id" property="courtId" />
+        <result column="city_id" property="cityId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, court, court_id, city_id
+    </sql>
+
+</mapper>

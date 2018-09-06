@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xparsing.weixin.dao.ContentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xparsing.weixin.entity.Content">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="release_date" property="releaseDate" />
+        <result column="content_definite" property="contentDefinite" />
+        <result column="announcement" property="announcement" />
+        <result column="law_type" property="lawType" />
+        <result column="hearing_procedure" property="hearingProcedure" />
+        <result column="law_date" property="lawDate" />
+        <result column="people" property="people" />
+        <result column="reason" property="reason" />
+        <result column="basis" property="basis" />
+        <result column="judge" property="judge" />
+        <result column="agent" property="agent" />
+        <result column="plaintiff" property="plaintiff" />
+        <result column="defendant" property="defendant" />
+        <result column="legal_representative" property="legalRepresentative" />
+        <result column="court_id" property="courtId" />
+        <result column="city_id" property="cityId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, release_date, content_definite, announcement, law_type, hearing_procedure, law_date, people, reason, basis, judge, agent, plaintiff, defendant, legal_representative, court_id, city_id
+    </sql>
+
+</mapper>

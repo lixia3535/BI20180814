@@ -11,6 +11,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bi-service-contract/bi-service-contract.iml" filepath="$PROJECT_DIR$/.idea/modules/bi-service-contract/bi-service-contract.iml" group="bi-service-contract" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bi-service-contract/bi-service-contract_main.iml" filepath="$PROJECT_DIR$/.idea/modules/bi-service-contract/bi-service-contract_main.iml" group="bi-service-contract" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bi-service-contract/bi-service-contract_test.iml" filepath="$PROJECT_DIR$/.idea/modules/bi-service-contract/bi-service-contract_test.iml" group="bi-service-contract" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bi-servise-elasticsearch/bi-servise-elasticsearch.iml" filepath="$PROJECT_DIR$/.idea/modules/bi-servise-elasticsearch/bi-servise-elasticsearch.iml" group="bi-servise-elasticsearch" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bi-servise-elasticsearch/bi-servise-elasticsearch_main.iml" filepath="$PROJECT_DIR$/.idea/modules/bi-servise-elasticsearch/bi-servise-elasticsearch_main.iml" group="bi-servise-elasticsearch" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bi-servise-elasticsearch/bi-servise-elasticsearch_test.iml" filepath="$PROJECT_DIR$/.idea/modules/bi-servise-elasticsearch/bi-servise-elasticsearch_test.iml" group="bi-servise-elasticsearch" />
     </modules>
   </component>
 </project>

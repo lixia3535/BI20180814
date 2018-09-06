@@ -2,6 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xparsing.weixin.dao.ContentMapper">
 
+
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.xparsing.weixin.entity.Content">
         <id column="id" property="id" />
@@ -21,11 +22,74 @@
         <result column="defendant" property="defendant" />
         <result column="legal_representative" property="legalRepresentative" />
         <result column="court_id" property="courtId" />
+        <result column="city_id" property="cityId" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, name, release_date, content_definite, announcement, law_type, hearing_procedure, law_date, people, reason, basis, judge, agent, plaintiff, defendant, legal_representative, court_id
+        id, name, release_date, content_definite, announcement, law_type, hearing_procedure, law_date, people, reason, basis, judge, agent, plaintiff, defendant, legal_representative, court_id, city_id
     </sql>
+
+    <!--根据案由案件数-->
+    <select id="findCaseCountByReason" parameterType="com.xparsing.weixin.entity.Content" resultType="int">
+        select count(*)  from content
+        where content.reason like CONCAT(CONCAT('%',#{reason}),'%')
+        and STR_TO_DATE(law_date,'%Y-%m-%d') &gt;= STR_TO_DATE(#{lawDate},'%Y-%m-%d')
+        and  STR_TO_DATE(law_date,'%Y-%m-%d') &lt; STR_TO_DATE(DATE_ADD(#{lawDate}, INTERVAL 1 YEAR),'%Y-%m-%d')
+        and city_id = #{cityId}
+    </select>
+
+    <!--根据案由查询对应律师的人数  对应律师人数-->
+    <select id="findByLawyerCount" parameterType="com.xparsing.weixin.entity.Content" resultType="java.util.Map">
+        select count(tb_content_lawyer.LAWYER_ID) from content INNER JOIN tb_content_lawyer on content.id = tb_content_lawyer.CONTENT_ID
+         where content.reason like CONCAT(CONCAT('%',#{reason}),'%')
+        and STR_TO_DATE(law_date,'%Y-%m-%d') &gt;= STR_TO_DATE(#{lawDate},'%Y-%m-%d')
+        and  STR_TO_DATE(law_date,'%Y-%m-%d') &lt; STR_TO_DATE(DATE_ADD(#{lawDate}, INTERVAL 1 YEAR),'%Y-%m-%d')
+        and city_id = #{cityId}
+        GROUP BY tb_content_lawyer.LAWYER_ID
+    </select>
+    <!--查询案由对应法官的个数-->
+    <select id="findByJudgeCount" parameterType="com.xparsing.weixin.entity.Content" resultType="java.util.Map">
+        select count(tb_content_judge.JUDGE_ID) from content INNER JOIN tb_content_judge on content.id = tb_content_judge.CONTENT_ID
+        where content.reason like CONCAT(CONCAT('%',#{reason}),'%')
+         and STR_TO_DATE(law_date,'%Y-%m-%d') &gt;= STR_TO_DATE(#{lawDate},'%Y-%m-%d')
+        and  STR_TO_DATE(law_date,'%Y-%m-%d') &lt; STR_TO_DATE(DATE_ADD(#{lawDate}, INTERVAL 1 YEAR),'%Y-%m-%d')
+        and city_id = #{cityId}
+        GROUP BY tb_content_judge.JUDGE_ID
+    </select>
+
+    <!--根据案由 时间 地区 查询律师名字打官司的数量-->
+    <select id="findLawerByReasonAndCourtidAndLawdate" parameterType="com.xparsing.weixin.entity.Content" resultType="java.util.Map">
+        select COUNT(tb_content_lawyer.LAWYER_ID)AS caseCount ,tb_lawyers.`NAME`  from content INNER JOIN tb_content_lawyer on content.id = tb_content_lawyer.CONTENT_ID
+        INNER JOIN tb_lawyers ON tb_lawyers.ID = tb_content_lawyer.LAWYER_ID
+          where content.reason like CONCAT(CONCAT('%',#{reason}),'%')
+        and STR_TO_DATE(law_date,'%Y-%m-%d') &gt;= STR_TO_DATE(#{lawDate},'%Y-%m-%d')
+        and  STR_TO_DATE(law_date,'%Y-%m-%d') &lt; STR_TO_DATE(DATE_ADD(#{lawDate}, INTERVAL 1 YEAR),'%Y-%m-%d')
+        and city_id = #{cityId}
+        GROUP BY tb_content_lawyer.LAWYER_ID
+        ORDER BY caseCount DESC
+         LIMIT 0,20
+    </select>
+
+    <!--根据案由 时间 地区 查询法官打官司的数量-->
+    <select id="findJudgeByReasonAndCourtidAndLawdate" parameterType="com.xparsing.weixin.entity.Content" resultType="java.util.Map">
+        select COUNT(tb_content_judge.JUDGE_ID)AS caseCount ,tb_judge.`JUDGENAME` AS NAME from content INNER JOIN tb_content_judge on content.id = tb_content_judge.CONTENT_ID
+        INNER JOIN tb_judge ON tb_judge.ID = tb_content_judge.JUDGE_ID
+        where  content.reason like CONCAT(CONCAT('%',#{reason}),'%')
+        and STR_TO_DATE(law_date,'%Y-%m-%d') &gt;= STR_TO_DATE(#{lawDate},'%Y-%m-%d')
+        and  STR_TO_DATE(law_date,'%Y-%m-%d') &lt; STR_TO_DATE(DATE_ADD(#{lawDate}, INTERVAL 1 YEAR),'%Y-%m-%d')
+        and city_id = #{cityId}
+        GROUP BY tb_content_judge.JUDGE_ID
+        ORDER BY caseCount DESC
+         LIMIT 0,20
+    </select>
+
+
+
+
+
+
+
+
 
 </mapper>

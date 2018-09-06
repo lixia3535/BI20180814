@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: eureka-elasticsearch
+  #节点名字
+  #data:
+    #elasticsearch:
+      #cluster-name: elasticsearch
+      #cluster-nodes: 127.0.0.1:9300
+      #repositories:
+        #enabled: true
+
+#配置端口和访问路径
+server:
+  port: 5679
+  servlet:
+    path: /elasticsearch
+logging:
+  config: classpath:logback-spring.xml
+  path: D:/nmyslog
+#elk集群地址
+elasticsearch:
+  ip: 127.0.0.1
+  port: 9300
+  pool: 5
+  cluster:
+    name: elasticsearch
+
